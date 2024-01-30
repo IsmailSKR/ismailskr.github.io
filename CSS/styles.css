@@ -5,7 +5,6 @@
     background: #0A0119;
 }
 
-/* Global Styles */
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
@@ -17,33 +16,6 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
-}
-
-h1 {
-    margin-bottom: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-h2 {
-    margin-bottom: 10px;
 }
 
 .title {
