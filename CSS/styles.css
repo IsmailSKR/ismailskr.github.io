@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: #0A0119;
 }
 
 /* Global Styles */
@@ -47,17 +48,78 @@ h2 {
     margin-bottom: 10px;
 }
 
+.title {
+    color: #F9F5FF;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.nav {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 80px;
+    text-decoration: none
+}
+
+.presentation {
+    background: #0A0119;
+}
+
+.presentation h2 {
+    color: #FAFBFF;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.presentation h3 {
+    display: flex;
+    width: 555px;
+    height: 58px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.presentation p {
+    color: #FAFBFF;
+    font-family: Inter;
+    font-size: 1px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.presentation img {
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.presentation button {
+    color: #0A0119;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: inline-flex;
+    padding: 12px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background: #F9F5FF;
+}
+
 .mission, .projet {
     margin-bottom: 20px;
 }
 
-/* Styles spécifiques à index.html */
-.presentation {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+
 
 /* Styles spécifiques à bloc_pro.html et bloc_academique.html */
 .mission, .projet {
