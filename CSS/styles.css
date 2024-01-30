@@ -3,39 +3,82 @@
     padding: 0;
     box-sizing: border-box;
     background: #0A0119;
+    width:95%;
+    margin: 0 auto;
 }
 
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    row-gap: 64px;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    text-align: center;
+    max-width: 4500px; 
+    width: 100%;
 }
 
 .title {
     color: #F9F5FF;
     font-family: Inter;
-    font-size: 32px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 
 .nav {
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
     align-items: flex-start;
     gap: 80px;
+}
+.nav a {
     text-decoration: none;
+    color: #fff;
 }
 
 .presentation {
     background: #0A0119;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px; 
+    max-width: 4500px; 
+    width: 100%;
+}
+
+.presentation > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    width: 100%;
+}
+
+.presentation-img {
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation-img img {
+    width: 300px;
+    height: auto;
+}
+
+
+.presentation > div:first-child {
+    flex: 2;
+}
+
+.presentation > div:last-child {
+    flex: 1;
 }
 
 .presentation h2 {
@@ -48,40 +91,243 @@ header {
 }
 
 .presentation h3 {
-    display: flex;
     color: #FAFBFF;
-    width: 555px;
-    height: 58px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .presentation p {
     color: #FAFBFF;
     font-family: Inter;
-    font-size: 1px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
 }
 
 .presentation img {
-    background: url("/img/Memoji.png"), lightgray 50% / cover no-repeat;
+    width: 300px;
+    height: auto;
 }
 
 .presentation button {
     color: #0A0119;
     font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    padding: 12px 36px;
+    border-radius: 20px;
+    background: #F9F5FF;
+    width: fit-content;
+}
+.resume {
+    color: #FAFBFF;
+    font-family: Inter;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+}
+
+.mail{
+    color: #FAFBFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+}
+
+.details {
+    background: #0A0119;
+    gap: 20px; 
+    max-width: 4500px; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.details > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.details-img {
+    justify-content: center;
+    align-items: center;
+}
+
+.details-img img {
+    width: 300px;
+    height: auto;
+}
+
+.details > div:first-child {
+    flex: 1;
+}
+
+.details > div:last-child {
+    flex: 2;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 4500px;
+    margin: 0 auto;
+}
+
+.project-grid .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.project-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.academic {
+    background-color: #0A0119;
+    padding: 20px;
+    border-radius: 10px;
+    color: #FAFBFF;
+    display: flex;
+    column-gap: 24px;
+    justify-content: center;
+}
+
+.academic div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    align-items: center;
+    background-color: #0a011978;
+    border: 1px solid rgb(169, 160, 160);
+    border-radius: 8px;
+    padding: 10px;
+}
+.academic h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.academic h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.academic h5 {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.academic p {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: center;
+}
+.languages {
+    text-align: center; 
+}
+
+.languages svg {
+    width: 30px; 
+    height: 30px;
+    margin: 5px;
+}
+
+.internship {
+    background: #0A0119;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px; 
+    max-width: 4500px; 
+    width: 100%;
+}
+
+.internship > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    width: 100%;
+}
+
+.internship-img {
+    justify-content: center;
+    align-items: center;
+}
+
+.internship-img img {
+    width: 300px;
+    height: auto;
+}
+
+
+.internship > div:first-child {
+    flex: 1;
+}
+
+.internship > div:last-child {
+    flex: 2;
+}
+
+.internship h2 {
+    color: #FAFBFF;
+    font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    display: inline-flex;
-    padding: 12px 36px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 20px;
-    background: #F9F5FF;
+}
+
+.internship h5 {
+    color: #FAFBFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.internship h3 {
+    color: #FAFBFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.internship p {
+    color: #FAFBFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
 }
