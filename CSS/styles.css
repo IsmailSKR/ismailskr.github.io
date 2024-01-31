@@ -113,18 +113,20 @@ header {
     height: auto;
 }
 
-.presentation button {
-    color: #0A0119;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-    padding: 12px 36px;
-    border-radius: 20px;
-    background: #F9F5FF;
-    width: fit-content;
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6563ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
+
+.download-button:hover {
+    background-color: #4341d4;
+}
+
 .resume {
     color: #FAFBFF;
     font-family: Inter;
@@ -202,6 +204,7 @@ header {
     border-radius: 8px;
 }
 
+
 .academic {
     background-color: #0A0119;
     padding: 20px;
@@ -253,12 +256,14 @@ header {
     text-align: center;
 }
 .languages {
-    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+ 
 .languages svg {
-    width: 30px; 
-    height: 30px;
+    width: 36px !important;
+    height: 36px !important;
     margin: 5px;
 }
 
@@ -330,4 +335,44 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
+}
+.contact-links {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-links a {
+    display: flex;
+    width: fit-content;
+    margin: 0;
+}
+
+.contact-links a svg {
+    width: 40px; 
+    height: auto;
+}
+  
+.skills-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 20px;
+}
+
+.language div {    
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 16px;
+}
+.language h5 {
+font-family: 'Inter', sans-serif;  
+font-size: 16px;
+font-weight: bold;
+margin-bottom: 20px;
+margin-top: 20px;
+text-align: center;
+}
+.language svg {
+width: 48px !important;
+height: 48px !important;
 }
