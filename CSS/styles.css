@@ -223,6 +223,15 @@ header {
     border-radius: 8px;
 }
 
+.feel {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
 .academic {
     padding: 20px;
     color: #FAFBFF;
