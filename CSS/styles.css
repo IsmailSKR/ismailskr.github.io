@@ -134,6 +134,20 @@ header {
     text-align: center;
 }
 
+.explain {
+    color: #FAFBFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+    margin: 12px;
+;}
+
 .mail{
     color: #FAFBFF;
     font-family: Inter;
@@ -415,82 +429,3 @@ text-align: center;
 width: 48px !important;
 height: 48px !important;
 }
-
-/* Media queries pour les écrans plus petits */
-@media screen and (max-width: 767px) {
-    .nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav a {
-        margin-top: 20px;
-    }
-}
-
-/* Styles de la section de présentation */
-.presentation {
-    background: #0A0119;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    gap: 20px; 
-    max-width: 4500px; 
-    width: 100%;
-}
-
-.presentation > div {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; 
-    width: 100%;
-}
-
-.presentation-img img {
-    width: 100%;
-    height: auto;
-}
-
-/* Media queries pour les écrans plus petits */
-@media screen and (max-width: 767px) {
-    .presentation {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .presentation > div {
-        align-items: center;
-    }
-}
-
-/* Styles de la section "About Me" */
-.resume {
-    color: #FAFBFF;
-    font-family: Inter;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 28px;
-    text-align: center;
-}
-
-.details {
-    background: #0A0119;
-    gap: 20px; 
-    max-width: 4500px; 
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.details > div {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; 
-}
-
-.details-img img {
-    width: 100%;
-    height: auto;
-}
-
