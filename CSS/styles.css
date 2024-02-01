@@ -439,6 +439,17 @@ width: 48px !important;
 height: 48px !important;
 }
 
+.future {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    padding-top: 16px;
+}
+
 @media screen and (max-width: 768px) {
     body {
       row-gap: 24px;
@@ -485,6 +496,7 @@ height: 48px !important;
   
     .internship,
     .feel,
+    .future,
     .about {
       display: flex; /* Flex-column pour experience et about */
       flex-direction: column;
