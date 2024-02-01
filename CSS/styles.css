@@ -232,11 +232,11 @@ header {
     text-align: center;
 }
 .academic {
-    padding: 20px;
     color: #FAFBFF;
     display: flex;
     column-gap: 24px;
     justify-content: center;
+    padding-top: 20px;
 }
 .academic-card{
     display: flex;
@@ -491,7 +491,6 @@ height: 48px !important;
       display: grid;
       grid-template-columns: 1fr; /* Une seule colonne */
       gap: 20px;
-      padding: 20px;
     }
   
     .internship,
