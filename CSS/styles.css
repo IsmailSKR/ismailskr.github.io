@@ -46,7 +46,6 @@ header {
     background: #0A0119;
     display: flex;
     align-items: center;
-    padding: 20px;
     gap: 20px; 
     max-width: 4500px; 
     width: 100%;
@@ -333,7 +332,6 @@ header {
     background: #0A0119;
     display: flex;
     align-items: center;
-    padding: 20px;
     gap: 20px; 
     max-width: 4500px; 
     width: 100%;
@@ -476,6 +474,8 @@ height: 48px !important;
     .presentation {
       flex-direction: column;
       gap: 20px;
+      align-items: center; /* Centrer la présentation */
+      text-align: center; /* Centrer le texte dans la présentation */
     }
   
     .presentation-img img {
@@ -505,12 +505,20 @@ height: 48px !important;
       gap: 20px;
       text-align: center; /* Centrer le texte */
     }
-  
+
+    .internship p {
+        align-items: center;
+        justify-content: center;
+    }
     .details {
       flex-direction: column; /* Flex-column pour la section "About Me" */
       align-items: center;
     }
-  
+
+    .details-img img {
+        width: 150px;
+        margin: 0 auto;
+    }
     .project-grid {
       display: grid;
       grid-template-columns: 1fr; /* Une seule colonne */
@@ -544,7 +552,14 @@ height: 48px !important;
       width: 48px !important;
       height: 48px !important;
     }
-  }  
+
+    .contact-links {
+      text-align: center;
+      justify-content: center;
+      align-items: center; /* Centrer le contenu de la division contact-links */
+    }
+}
+
   
   /* Pour les écrans de très petite taille */
   @media screen and (max-width: 480px) {
