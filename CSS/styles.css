@@ -484,6 +484,7 @@ height: 48px !important;
     }
   
     .internship,
+    .feel,
     .about {
       display: flex; /* Flex-column pour experience et about */
       flex-direction: column;
